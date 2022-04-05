@@ -8,3 +8,4 @@ if __name__=="__main__":
   POLYGON_API = os.environ['POLYGON_API_KEY']
   #print(os.environ["UBUNTU_SERVER"])
   print(UBUNTU_SERVER)
+  pprint.pprint(dict(os.environ))
