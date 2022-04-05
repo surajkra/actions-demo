@@ -28,7 +28,8 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Run a multi-line script, test action secret usage
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo ${{ secrets.UBUNTU_SERVER }}
