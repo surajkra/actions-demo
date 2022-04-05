@@ -27,6 +27,7 @@ jobs:
       - name: Set envt variable
         env: # Or as an environment variable
           credentials: ${{ secrets.UBUNTU_SERVER }}
+        run: echo "$credentials"
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
