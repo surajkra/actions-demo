@@ -27,6 +27,7 @@ jobs:
       - name: Set envt variable
         env: # Or as an environment variable
           credentials: ${{ secrets.UBUNTU_SERVER }}
+          UBUNTU_SERVER: "192.168.8.201"
         run: echo "$UBUNTU_SERVER"
 
       # Runs a single command using the runners shell
