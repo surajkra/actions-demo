@@ -26,9 +26,9 @@ jobs:
       # Set Secret Envt Variable
       - name: Set envt variable
         env: # Or as an environment variable
-          credentials: ${{ secrets.UBUNTU_SERVER }}
-          UBUNTU_SERVER: "192.168.8.201"
-        run: echo "$UBUNTU_SERVER"
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+          UBUNTU_SERVER: ${{ secrets.UBUNTU_SERVER }}
+        run: python3 main.py
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
